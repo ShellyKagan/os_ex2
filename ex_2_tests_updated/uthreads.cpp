@@ -65,7 +65,7 @@ class Thread
   }
 };
 
-Thread * threads[MAX_THREAD_NUM];
+Thread *threads[MAX_THREAD_NUM];
 vector<int> readies;
 vector<int> sleepings;
 int running_process_id = 0;
@@ -75,29 +75,43 @@ int quantum_len = 0;
 
 // ---------------------- jumping ------------------------
 
+sigset_t *block_sig ()
+{
+  sigset_t new_set, old_set;
+  sigemptyset (&new_set);
+  sigaddset (&new_set, SIGVTALRM);
+  sigprocmask (SIG_SETMASK, &new_set, &old_set);
+  return &old_set;
+}
+
+void unblock_sig (sigset_t *old_set)
+{
+  sigprocmask (SIG_SETMASK, old_set, nullptr);
+}
+
 void jump_to_thread (int tid)
 {
   running_process_id = tid;
   siglongjmp (threads[tid]->_env, 1);
 }
-void yield(int jump_tid)
+void yield (int jump_tid)
 {
   int ret_val = sigsetjmp(threads[running_process_id]->_env, 1);
-  printf("yield: ret_val=%d\n", ret_val);
+  printf ("yield: ret_val=%d\n", ret_val);
   if (ret_val == 0)
   {
-    jump_to_thread(jump_tid);
+    jump_to_thread (jump_tid);
   }
 }
 /* A translation is required when using an address of a variable.
    Use this as a black box in your code. */
-address_t translate_address(address_t addr)
+address_t translate_address (address_t addr)
 {
   address_t ret;
   asm volatile("xor    %%fs:0x30,%0\n"
                "rol    $0x11,%0\n"
-      : "=g" (ret)
-      : "0" (addr));
+  : "=g" (ret)
+  : "0" (addr));
   return ret;
 }
 
@@ -245,42 +259,27 @@ int look_for_id ()
 /**
  * Display all relevant data structures status for debugging
  */
-void display_status(){
+void display_status ()
+{
   printf ("---------------THREADS ARRAY------------------\n");
-  fflush(stdout);
-  for(int i = 0; i<MAX_THREAD_NUM; i++){
+  fflush (stdout);
+  for (int i = 0; i < MAX_THREAD_NUM; i++)
+  {
     printf ("thread id: %d, state: %u, \n", i, threads[i]->_state);
-    fflush(stdout);
+    fflush (stdout);
   }
   printf ("-----------------READY QUEUE----------------\n");
-  fflush(stdout);
-  cout  << &readies << endl;
+  fflush (stdout);
+  cout << &readies << endl;
   printf ("---------------SLEEPING LIST------------------\n");
-  fflush(stdout);
+  fflush (stdout);
   cout << &sleepings << endl;
 }
 
-// --------------------- API ---------------------------
-
-
-int uthread_init (int quantum_usecs)
-{
-  set_clock (on_tick, quantum_usecs, quantum_usecs);
-  // init threads array
- // Thread default_thread = Thread ();
-  // all is null
-//  for (auto &thread: threads)
-//  {
-//    thread = default_thread;
-//  } I think there might be a stack and entry_point
-  threads[0] = new Thread();
-  threads[0]->_state = RUN;
-  return SUCCESS;
-}
-
-
 void setup_thread (int tid, char *stack, thread_entry_point entry_point)
 {
+  sigset_t *old_set = block_sig ();
+
   // initializes env[tid] to use the right stack, and to run from the function 'entry_point', when we'll use
   // siglongjmp to jump into the thread.
   address_t sp = (address_t) stack + STACK_SIZE - sizeof (address_t);
@@ -291,35 +290,59 @@ void setup_thread (int tid, char *stack, thread_entry_point entry_point)
   sigemptyset (&threads[tid]->_env->__saved_mask);
 }
 
+// --------------------- API ---------------------------
+
+
+int uthread_init (int quantum_usecs)
+{
+  sigset_t *old_set = block_sig ();
+
+  set_clock (on_tick, quantum_usecs, quantum_usecs);
+  // init threads array
+  // Thread default_thread = Thread ();
+  // all is null
+//  for (auto &thread: threads)
+//  {
+//    thread = default_thread;
+//  } I think there might be a stack and entry_point
+  threads[0] = new Thread ();
+  threads[0]->_state = RUN;
+  unblock_sig (old_set);
+  return SUCCESS;
+}
+
+
 int uthread_spawn (thread_entry_point entry_point)
 {
+  sigset_t *old_set = block_sig ();
+
+  printf ("ASASAS enter function uthread_spawn. running is %d\n",
+          running_process_id);
+  // initialization & error checking
+  if (current_threads_amount > MAX_THREAD_NUM || entry_point == nullptr)
   {
-    printf ("ASASAS enter function uthread_spawn. running is %d\n",
-            running_process_id);
-    // initialization & error checking
-    if (current_threads_amount > MAX_THREAD_NUM || entry_point == nullptr)
-    {
-      return FAIL;
-    }
-    int id = look_for_id ();
-    if (id == FAIL)
-    {
-      return FAIL;
-    }
-
-    char *stack = new char[sizeof (stack) * STACK_SIZE];
-
-    // create the new thread and pushes it to the ready queue
-    threads[id] = new Thread (id, READY, stack, entry_point, 1, 0);
-    setup_thread (id, stack, entry_point);
-    current_threads_amount++;
-    readies.insert (readies.begin (), id);
-    return id;
+    return FAIL;
   }
+  int id = look_for_id ();
+  if (id == FAIL)
+  {
+    return FAIL;
+  }
+
+  char *stack = new char[sizeof (stack) * STACK_SIZE];
+
+  // create the new thread and pushes it to the ready queue
+  threads[id] = new Thread (id, READY, stack, entry_point, 1, 0);
+  setup_thread (id, stack, entry_point);
+  current_threads_amount++;
+  readies.insert (readies.begin (), id);
+  unblock_sig (old_set);
+  return id;
 }
 
 int uthread_terminate (int tid)
 {
+  sigset_t *old_set = block_sig ();
   printf ("ASASAS enter function uthread_terminate. running is %d, parameter "
           "is %d"
           "\n",
@@ -338,8 +361,7 @@ int uthread_terminate (int tid)
   // delete from sleeping list
   if (threads[tid]->_remain_sleep_time > 0)
   {
-    sleepings.erase (std::remove (sleepings.begin (), sleepings.end (), tid)
-                     , sleepings.end ());
+    sleepings.erase (std::remove (sleepings.begin (), sleepings.end (), tid), sleepings.end ());
   }
 
   //delete from threads array
@@ -353,13 +375,16 @@ int uthread_terminate (int tid)
     fflush (stdout);
     exit (0);
   }
+  unblock_sig (old_set);
   return SUCCESS;
 }
 
-int uthread_block (int tid){
-  printf("ASASAS enter function uthread_block. running is %d. parameter is "
-         "%d\n",
-         running_process_id, tid);
+int uthread_block (int tid)
+{
+  sigset_t *old_set = block_sig ();
+  printf ("ASASAS enter function uthread_block. running is %d. parameter is "
+          "%d\n",
+          running_process_id, tid);
   if (tid == 0)
   {
     printf ("thread library error: cant block the main thread\n");
@@ -380,13 +405,16 @@ int uthread_block (int tid){
                    readies.end ());
     threads[tid]->_state = BLOCKED;
   }
+  unblock_sig (old_set);
   return SUCCESS;
 }
 
-int uthread_resume (int tid){
-  printf("ASASAS enter function uthread_resume. running is %d, parameter is %d"
-         "\n",
-         running_process_id, tid);
+int uthread_resume (int tid)
+{
+  sigset_t *old_set = block_sig ();
+  printf ("ASASAS enter function uthread_resume. running is %d, parameter is %d"
+          "\n",
+          running_process_id, tid);
   if (is_exists (tid) == FAIL)
   {
     return FAIL;
@@ -404,13 +432,16 @@ int uthread_resume (int tid){
       // ready
     }
   }
+  unblock_sig (old_set);
   return SUCCESS;
 }
 
-int uthread_sleep (int num_quantums){
-  printf("ASASAS enter function uthread_sleep. running is %d, parameter is "
-         "%d\n",
-         running_process_id, num_quantums);
+int uthread_sleep (int num_quantums)
+{
+  sigset_t *old_set = block_sig ();
+  printf ("ASASAS enter function uthread_sleep. running is %d, parameter is "
+          "%d\n",
+          running_process_id, num_quantums);
 
   if (running_process_id == 0)
   {
@@ -431,29 +462,40 @@ int uthread_sleep (int num_quantums){
   {
     return schedule (SLEEPING);
   }
-  return schedule (BLOCKED);
+  int return_value = schedule (BLOCKED);
+  unblock_sig (old_set);
+  return return_value;
 }
 
-int uthread_get_tid (){
-  printf("ASASAS enter function uthread_get_tid. running is %d"
-         "\n", running_process_id);
+int uthread_get_tid ()
+{
+  sigset_t *old_set = block_sig ();
+  printf ("ASASAS enter function uthread_get_tid. running is %d"
+          "\n", running_process_id);
+  unblock_sig (old_set);
   return running_process_id;
 }
 
-int uthread_get_total_quantums (){
-  printf("ASASAS enter function uthread_get_total_quantums. running is %d\n",
-         running_process_id);
+int uthread_get_total_quantums ()
+{
+  sigset_t *old_set = block_sig ();
+  printf ("ASASAS enter function uthread_get_total_quantums. running is %d\n",
+          running_process_id);
   // todo: what does it means "including the current"?
+  unblock_sig (old_set);
   return total_tick;
 }
 
-int uthread_get_quantums (int tid){
-  printf("ASASAS enter function uthread_get_quantums. running is %d\n",
-         running_process_id);
+int uthread_get_quantums (int tid)
+{
+  sigset_t *old_set = block_sig ();
+  printf ("ASASAS enter function uthread_get_quantums. running is %d\n",
+          running_process_id);
   if (is_exists (tid) == FAIL)
   {
     return FAIL;
   }
+  unblock_sig (old_set);
   return threads[tid]->_quantums;
 }
 
