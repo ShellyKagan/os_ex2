@@ -6,17 +6,33 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/tests/test6_no_out.cpp
+/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/uthreads.cpp
+csetjmp
+-
+sys/time.h
+-
 cstdlib
 -
 cstdio
 -
-cstring
+uthreads.h
+/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/uthreads.h
+csetjmp
 -
-time.h
+csignal
 -
-../uthreads.h
-/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/uthreads.h
+vector
+-
+queue
+-
+algorithm
+-
+unistd.h
+-
+sys/time.h
+-
+iostream
+-
 
-/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/uthreads.h
+/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/uthreads.h
 

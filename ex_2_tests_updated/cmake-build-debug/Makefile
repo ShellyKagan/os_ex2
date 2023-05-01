@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated
+CMAKE_SOURCE_DIR = /mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug
+CMAKE_BINARY_DIR = /mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles /mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ uthreads.h/fast:
 	$(MAKE) -f CMakeFiles/uthreads.h.dir/build.make CMakeFiles/uthreads.h.dir/build
 .PHONY : uthreads.h/fast
 
-tests/test6_no_out.o: tests/test6_no_out.cpp.o
+tests/jona1.o: tests/jona1.cpp.o
 
-.PHONY : tests/test6_no_out.o
+.PHONY : tests/jona1.o
 
 # target to build an object file
-tests/test6_no_out.cpp.o:
-	$(MAKE) -f CMakeFiles/uthreads.h.dir/build.make CMakeFiles/uthreads.h.dir/tests/test6_no_out.cpp.o
-.PHONY : tests/test6_no_out.cpp.o
+tests/jona1.cpp.o:
+	$(MAKE) -f CMakeFiles/uthreads.h.dir/build.make CMakeFiles/uthreads.h.dir/tests/jona1.cpp.o
+.PHONY : tests/jona1.cpp.o
 
-tests/test6_no_out.i: tests/test6_no_out.cpp.i
+tests/jona1.i: tests/jona1.cpp.i
 
-.PHONY : tests/test6_no_out.i
+.PHONY : tests/jona1.i
 
 # target to preprocess a source file
-tests/test6_no_out.cpp.i:
-	$(MAKE) -f CMakeFiles/uthreads.h.dir/build.make CMakeFiles/uthreads.h.dir/tests/test6_no_out.cpp.i
-.PHONY : tests/test6_no_out.cpp.i
+tests/jona1.cpp.i:
+	$(MAKE) -f CMakeFiles/uthreads.h.dir/build.make CMakeFiles/uthreads.h.dir/tests/jona1.cpp.i
+.PHONY : tests/jona1.cpp.i
 
-tests/test6_no_out.s: tests/test6_no_out.cpp.s
+tests/jona1.s: tests/jona1.cpp.s
 
-.PHONY : tests/test6_no_out.s
+.PHONY : tests/jona1.s
 
 # target to generate assembly for a file
-tests/test6_no_out.cpp.s:
-	$(MAKE) -f CMakeFiles/uthreads.h.dir/build.make CMakeFiles/uthreads.h.dir/tests/test6_no_out.cpp.s
-.PHONY : tests/test6_no_out.cpp.s
+tests/jona1.cpp.s:
+	$(MAKE) -f CMakeFiles/uthreads.h.dir/build.make CMakeFiles/uthreads.h.dir/tests/jona1.cpp.s
+.PHONY : tests/jona1.cpp.s
 
 uthreads.o: uthreads.cpp.o
 
@@ -177,33 +177,6 @@ uthreads.cpp.s:
 	$(MAKE) -f CMakeFiles/uthreads.h.dir/build.make CMakeFiles/uthreads.h.dir/uthreads.cpp.s
 .PHONY : uthreads.cpp.s
 
-utils.o: utils.cpp.o
-
-.PHONY : utils.o
-
-# target to build an object file
-utils.cpp.o:
-	$(MAKE) -f CMakeFiles/uthreads.h.dir/build.make CMakeFiles/uthreads.h.dir/utils.cpp.o
-.PHONY : utils.cpp.o
-
-utils.i: utils.cpp.i
-
-.PHONY : utils.i
-
-# target to preprocess a source file
-utils.cpp.i:
-	$(MAKE) -f CMakeFiles/uthreads.h.dir/build.make CMakeFiles/uthreads.h.dir/utils.cpp.i
-.PHONY : utils.cpp.i
-
-utils.s: utils.cpp.s
-
-.PHONY : utils.s
-
-# target to generate assembly for a file
-utils.cpp.s:
-	$(MAKE) -f CMakeFiles/uthreads.h.dir/build.make CMakeFiles/uthreads.h.dir/utils.cpp.s
-.PHONY : utils.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -213,15 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... uthreads.h"
-	@echo "... tests/test6_no_out.o"
-	@echo "... tests/test6_no_out.i"
-	@echo "... tests/test6_no_out.s"
+	@echo "... tests/jona1.o"
+	@echo "... tests/jona1.i"
+	@echo "... tests/jona1.s"
 	@echo "... uthreads.o"
 	@echo "... uthreads.i"
 	@echo "... uthreads.s"
-	@echo "... utils.o"
-	@echo "... utils.i"
-	@echo "... utils.s"
 .PHONY : help
 
 

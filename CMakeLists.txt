@@ -6,5 +6,5 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(.)
 
 add_executable(os_ex2
-        uthreads.cpp
-        uthreads.h)
+        ex_2_tests_updated/uthreads.cpp
+        ex_2_tests_updated/uthreads.h)

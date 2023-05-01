@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated
+# Install script for directory: /mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

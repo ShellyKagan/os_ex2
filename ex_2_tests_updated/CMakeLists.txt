@@ -8,7 +8,5 @@ include_directories(.)
 add_executable(
         uthreads.h
         uthreads.cpp
-        utils.h
-        utils.cpp
-        tests/test6_no_out.cpp
+        tests/jona1.cpp
         )

@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/. 
+CXX_INCLUDES = -I/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/. 
 

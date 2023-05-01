@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated
+CMAKE_SOURCE_DIR = /mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug
+CMAKE_BINARY_DIR = /mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/uthreads.h.dir/depend.make
@@ -59,58 +59,43 @@ include CMakeFiles/uthreads.h.dir/flags.make
 
 CMakeFiles/uthreads.h.dir/uthreads.cpp.o: CMakeFiles/uthreads.h.dir/flags.make
 CMakeFiles/uthreads.h.dir/uthreads.cpp.o: ../uthreads.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/uthreads.h.dir/uthreads.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uthreads.h.dir/uthreads.cpp.o -c /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/uthreads.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/uthreads.h.dir/uthreads.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uthreads.h.dir/uthreads.cpp.o -c /mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/uthreads.cpp
 
 CMakeFiles/uthreads.h.dir/uthreads.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/uthreads.h.dir/uthreads.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/uthreads.cpp > CMakeFiles/uthreads.h.dir/uthreads.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/uthreads.cpp > CMakeFiles/uthreads.h.dir/uthreads.cpp.i
 
 CMakeFiles/uthreads.h.dir/uthreads.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/uthreads.h.dir/uthreads.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/uthreads.cpp -o CMakeFiles/uthreads.h.dir/uthreads.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/uthreads.cpp -o CMakeFiles/uthreads.h.dir/uthreads.cpp.s
 
-CMakeFiles/uthreads.h.dir/utils.cpp.o: CMakeFiles/uthreads.h.dir/flags.make
-CMakeFiles/uthreads.h.dir/utils.cpp.o: ../utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/uthreads.h.dir/utils.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uthreads.h.dir/utils.cpp.o -c /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/utils.cpp
+CMakeFiles/uthreads.h.dir/tests/jona1.cpp.o: CMakeFiles/uthreads.h.dir/flags.make
+CMakeFiles/uthreads.h.dir/tests/jona1.cpp.o: ../tests/jona1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/uthreads.h.dir/tests/jona1.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uthreads.h.dir/tests/jona1.cpp.o -c /mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/tests/jona1.cpp
 
-CMakeFiles/uthreads.h.dir/utils.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/uthreads.h.dir/utils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/utils.cpp > CMakeFiles/uthreads.h.dir/utils.cpp.i
+CMakeFiles/uthreads.h.dir/tests/jona1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/uthreads.h.dir/tests/jona1.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/tests/jona1.cpp > CMakeFiles/uthreads.h.dir/tests/jona1.cpp.i
 
-CMakeFiles/uthreads.h.dir/utils.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/uthreads.h.dir/utils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/utils.cpp -o CMakeFiles/uthreads.h.dir/utils.cpp.s
-
-CMakeFiles/uthreads.h.dir/tests/test6_no_out.cpp.o: CMakeFiles/uthreads.h.dir/flags.make
-CMakeFiles/uthreads.h.dir/tests/test6_no_out.cpp.o: ../tests/test6_no_out.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/uthreads.h.dir/tests/test6_no_out.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uthreads.h.dir/tests/test6_no_out.cpp.o -c /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/tests/test6_no_out.cpp
-
-CMakeFiles/uthreads.h.dir/tests/test6_no_out.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/uthreads.h.dir/tests/test6_no_out.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/tests/test6_no_out.cpp > CMakeFiles/uthreads.h.dir/tests/test6_no_out.cpp.i
-
-CMakeFiles/uthreads.h.dir/tests/test6_no_out.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/uthreads.h.dir/tests/test6_no_out.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/tests/test6_no_out.cpp -o CMakeFiles/uthreads.h.dir/tests/test6_no_out.cpp.s
+CMakeFiles/uthreads.h.dir/tests/jona1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/uthreads.h.dir/tests/jona1.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/tests/jona1.cpp -o CMakeFiles/uthreads.h.dir/tests/jona1.cpp.s
 
 # Object files for target uthreads.h
 uthreads_h_OBJECTS = \
 "CMakeFiles/uthreads.h.dir/uthreads.cpp.o" \
-"CMakeFiles/uthreads.h.dir/utils.cpp.o" \
-"CMakeFiles/uthreads.h.dir/tests/test6_no_out.cpp.o"
+"CMakeFiles/uthreads.h.dir/tests/jona1.cpp.o"
 
 # External object files for target uthreads.h
 uthreads_h_EXTERNAL_OBJECTS =
 
 uthreads.h: CMakeFiles/uthreads.h.dir/uthreads.cpp.o
-uthreads.h: CMakeFiles/uthreads.h.dir/utils.cpp.o
-uthreads.h: CMakeFiles/uthreads.h.dir/tests/test6_no_out.cpp.o
+uthreads.h: CMakeFiles/uthreads.h.dir/tests/jona1.cpp.o
 uthreads.h: CMakeFiles/uthreads.h.dir/build.make
 uthreads.h: CMakeFiles/uthreads.h.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable uthreads.h"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable uthreads.h"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/uthreads.h.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +108,6 @@ CMakeFiles/uthreads.h.dir/clean:
 .PHONY : CMakeFiles/uthreads.h.dir/clean
 
 CMakeFiles/uthreads.h.dir/depend:
-	cd /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles/uthreads.h.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated /mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated /mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug /mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug /mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles/uthreads.h.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uthreads.h.dir/depend
 

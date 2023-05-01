@@ -4,9 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/tests/test6_no_out.cpp" "/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles/uthreads.h.dir/tests/test6_no_out.cpp.o"
-  "/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/uthreads.cpp" "/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles/uthreads.h.dir/uthreads.cpp.o"
-  "/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/utils.cpp" "/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles/uthreads.h.dir/utils.cpp.o"
+  "/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/tests/jona1.cpp" "/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles/uthreads.h.dir/tests/jona1.cpp.o"
+  "/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/uthreads.cpp" "/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles/uthreads.h.dir/uthreads.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

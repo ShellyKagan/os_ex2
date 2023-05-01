@@ -8,43 +8,43 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug"/>
+				<Option working_dir="/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug"/>
+				<Option working_dir="/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug"/>
+				<Option working_dir="/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="uthreads.h">
-				<Option output="/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/uthreads.h" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug"/>
+				<Option output="/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/uthreads.h" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/."/>
+					<Add directory="/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/."/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -54,20 +54,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 uthreads.h"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 uthreads.h"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="uthreads.h/fast">
-				<Option output="/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/uthreads.h" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug"/>
+				<Option output="/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/uthreads.h" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/."/>
+					<Add directory="/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/."/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -77,29 +77,23 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 uthreads.h/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 uthreads.h/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/tests/test6_no_out.cpp">
+		<Unit filename="/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/tests/jona1.cpp">
 			<Option target="uthreads.h"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/uthreads.cpp">
+		<Unit filename="/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/uthreads.cpp">
 			<Option target="uthreads.h"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/uthreads.h">
+		<Unit filename="/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/uthreads.h">
 			<Option target="uthreads.h"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/utils.cpp">
-			<Option target="uthreads.h"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/utils.h">
-			<Option target="uthreads.h"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/CMakeLists.txt">
+		<Unit filename="/mnt/c/Users/shell/CLionProjects/os_ex2/ex_2_tests_updated/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

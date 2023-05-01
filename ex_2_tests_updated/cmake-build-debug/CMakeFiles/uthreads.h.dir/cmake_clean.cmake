@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/uthreads.h.dir/tests/test6_no_out.cpp.o"
+  "CMakeFiles/uthreads.h.dir/tests/jona1.cpp.o"
   "CMakeFiles/uthreads.h.dir/uthreads.cpp.o"
-  "CMakeFiles/uthreads.h.dir/utils.cpp.o"
   "uthreads.h"
   "uthreads.h.pdb"
 )
