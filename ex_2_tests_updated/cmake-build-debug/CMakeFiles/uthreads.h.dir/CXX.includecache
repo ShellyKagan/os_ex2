@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/tests/test6_no_out.cpp
+cstdlib
+-
+cstdio
+-
+cstring
+-
+time.h
+-
+../uthreads.h
+/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/uthreads.h
+
+/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/uthreads.h
+

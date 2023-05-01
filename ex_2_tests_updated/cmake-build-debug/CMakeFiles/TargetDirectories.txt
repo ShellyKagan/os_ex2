@@ -1,0 +1,3 @@
+/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles/uthreads.h.dir
